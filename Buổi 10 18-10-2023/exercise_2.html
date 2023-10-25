@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Exercise 2 HTML DOM</title>
+</head>
+<body>
+    <h1 id="title">Coffee Shop Menu </h1>
+    <ul id="lesson 2">
+        <li>Coffee</li>
+        <li>Capuchino</li>
+        <li>milk Tea</li>
+        <li id="lesson">Tropical Fruit Tea</li>
+        <li>Peach Tea</li>
+    </ul >
+    <button id="btn-update">Update Menu </button>
+    <script>
+        let btnUpdate = document.getElementById("btn-update");
+        // thao tác xử lý khi click button
+        btnUpdate.addEventListener('click',()=>{
+            let titelElem = document.getElementById("title");
+        titelElem.style.color = "red";
+        
+        let addElem = document.getElementById("lesson2");
+        let removeElem = document.getElementById("lesson");
+        removeElem.remove();
+
+        let newElem = document.createElement("li");
+        newElem.innerText = "Fruit yogurt";
+        addElem.appendChild(newElem);
+        
+        });
+       
+        
+
+
+
+    </script>
+</body>
+</html>
