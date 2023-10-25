@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+</head>
+<body>
+    <h1> Practice 2 </h1>
+    <p>Hai vòi nước cùng được sử dụng để làm đầy một bể chứa nước hình hộp chữ nhật. 
+        Vòi thứ nhất có thể đong được x m3 trong một phút, 
+        vòi thứ hai có thể đong được y m3 trong một phút. 
+        Viết chương trình nhập vào công suất x, y của hai vòi và các kích thước dài, rộng, cao
+         của bể nước theo đơn vị mét và cho biết nếu sử dụng cả hai vòi thì 
+         sau bao nhiêu giờ có thể làm đầy bể.
+        </p>
+        <script>
+            let dai = parseInt(prompt("nhập chiều dài"));
+            let rong = parseInt(prompt(" nhập chiều rộng"));
+            let cao = parseInt(prompt("nhập chiều cao"));
+            let the_tich = dai*rong*cao ;
+            let x = parseInt(prompt("nhập công suất máy 1"));
+            let y = parseInt(prompt("nhập công suất máy 2"));
+            let so_gio =( the_tich/((x+y)*60));
+            alert(so_gio);
+
+        </script>
+    
+</body>
+</html>
