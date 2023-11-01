@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice While Loop</title>
+</head>
+<body>
+    <h1>Practice While Loop </h1>
+    <h2>Bài 2</h2>
+    <p>Viết chương trình nhập vào một số nguyên n và in ra các 
+        số từ 1 đến n với các trường hợp ngoại lệ sau:
+        - Nếu số đó chia hết cho 3 thì in "java"
+        - Nếu số đó chia hết cho 7 thì in "script"
+        - Nếu số đó chia hết cho cả 3 và 7 thi in "javascript"
+
+    </p>
+    <form action="">
+        <label for="">Nhập số nguyên n:</label>
+        <input type="number" id="SoN">
+        <button id="Btn">Submit</button>
+    </form>
+    <script>
+        let BtnElem = document.getElementById("Btn");
+        BtnElem.addEventListener("click" ,() =>{
+            let SoNguyen = parseInt(document.getElementById("SoN").value);
+           for (let i = 1; i <= SoNguyen; i += 1) {
+            if (i%3 == 0) {
+                console.log("java");
+            } else if (i%7 ==0) {
+                console.log("script");
+            } else if (i%3 ==0 && i%7 == 0){
+                console.log(javascript);
+            } else console.log(i)
+                
+            
+
+            }
+
+        });
+    </script>
+</body>
+</html>
