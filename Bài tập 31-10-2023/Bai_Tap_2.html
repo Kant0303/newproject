@@ -24,7 +24,9 @@
         let BtnElem = document.getElementById("Btn");
         BtnElem.addEventListener("click" ,() =>{
             let SoNguyen = parseInt(document.getElementById("SoN").value);
-           for (let i = 1; i <= SoNguyen; i += 1) {
+           let i = 1;
+          while(  i <= SoNguyen){
+           i += 1 
             if (i%3 == 0) {
                 console.log("java");
             } else if (i%7 ==0) {
@@ -32,10 +34,11 @@
             } else if (i%3 ==0 && i%7 == 0){
                 console.log(javascript);
             } else console.log(i)
+            }
                 
             
 
-            }
+            
 
         });
     </script>

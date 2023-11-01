@@ -19,7 +19,9 @@
             let SoNguyen = parseInt(document.getElementById("N").value);
             if (SoNguyen <= 1){
                alert ("Đây không phải số nguyên tố")
-            } for (let i =2; i <SoNguyen; i++){
+            }let i =2;
+             while ( i <SoNguyen){
+                i++
                 if (SoNguyen%i == 0){
                     alert ("đây không phải số nguyên tố")
                 } else alert("đây là số nguyên tố")
