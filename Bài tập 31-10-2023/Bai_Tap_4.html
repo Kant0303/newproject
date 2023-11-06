@@ -18,10 +18,18 @@
          <script>
             let BtnE = document.getElementById("Btn").addEventListener("click", () => {
                 SoNguyen = parseInt(document.getElementById("SoN").value);
-                let NString =SoNguyen.toString();
-                let 
+                let totalDigit =0;
+                let sumDigit =0;
+                let reverseValue = 0;
+                while (SoNguyen !=0){
+                  sumDigit +=  SoNguyen%10;
+                  reverseValue=reverseValue *10 + SoNguyen%10;
+                    SoNguyen = parseInt(SoNguyen/10);
+                    totalDigit ++
+                 }console.log(`Số lượng chữ số của n là ${totalDigit}`);
+                 console.log(`Tổng các chữ số của n là : ${sumDigit}`);
+                 console.log(`Chữ số đảo ngược của n là: ${reverseValue}`);
 
-                 
             });
          </script>
 

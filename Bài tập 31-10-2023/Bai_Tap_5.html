@@ -17,16 +17,18 @@
     <script>
         let BtnElem = document.getElementById("Btn").addEventListener("click" , () => {
             let SoNguyen = parseInt(document.getElementById("N").value);
-            if (SoNguyen <= 1){
-               alert ("Đây không phải số nguyên tố")
-            }let i =2;
+            let i=2;
+            //giả định n là số nguyên tố
+            let check = true;
              while ( i <SoNguyen){
-                i++
+                
                 if (SoNguyen%i == 0){
-                    alert ("đây không phải số nguyên tố")
-                } else alert("đây là số nguyên tố")
-
-            }
+                    alert (`${SoNguyen} không phải số nguyên tố`);
+                    check = false;
+                } 
+                i++
+            }if (check = true)
+            alert(`${SoNguyen} là số nguyên tố`);
             });
     </script>
     

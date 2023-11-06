@@ -26,14 +26,15 @@
             let SoNguyen = parseInt(document.getElementById("SoN").value);
            let i = 1;
           while(  i <= SoNguyen){
-           i += 1 
-            if (i%3 == 0) {
+           
+            if (i%3 ==0 && i%7 == 0) {
+                console.log("javascript");
+            } else if (i%3 ==0) {
                 console.log("java");
-            } else if (i%7 ==0) {
+            } else if (i%7 ==0){
                 console.log("script");
-            } else if (i%3 ==0 && i%7 == 0){
-                console.log(javascript);
             } else console.log(i)
+            i += 1 ;
             }
                 
             
