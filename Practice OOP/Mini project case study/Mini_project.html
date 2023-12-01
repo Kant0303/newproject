@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Case Study</title>
+</head>
+<body>
+    <h1>Mini Project Case Study</h1>
+    <form action="">
+        <label for="">ID: </label>
+        <input type="text" id="vehicle-id"><br>
+        <label for="">Owner Name: </label>
+        <input type="text" id="OwnerName"><br>
+
+        <label for="">Vehicle type: </label>
+        <input type="text" id="vehicle-type"><br>
+
+        <label for="">Cylinder Capacity: </label>
+        <input type="number" id="cylinder-capacity"><br>
+
+        <label for="">Cost: </label>
+        <input type="number" id="cost"><br>
+
+        <button type="button" id="btn-add" onclick="addVehicle()">Add new vehicle</button>
+        <button type="button" id="btn-update" onclick="updateVehicle()">Update</button>
+    </form>
+    <br>
+    <form action="">
+        <label for="">Input ID to search</label>
+        <input type="text" id="search-value">
+        <button type="button" id="btn-search" onclick="searchVehicle()">Search</button>
+        <button type="button" id="btn-delete" onclick="deleteVehicle()">Delete</button>
+    </form>
+    <br>
+    <br>
+
+    <table id="vehicle-table">
+        <tr>
+            <th>No.</th>
+            <th>Owner Name</th>
+            <th>Vehicle Type</th>
+            <th>Cylinder Capacity</th>
+            <th>cost</th>
+            <th>tax Value</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyen Van A</td>
+            <td>wave</td>
+            <td>150</td>
+            <td>15000000</td>
+            <td>450000</td>
+        </tr>
+    
+    </table>
+    <script src="./Mini_project.js"></script>
+    
+</body>
+</html>
